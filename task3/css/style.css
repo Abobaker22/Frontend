@@ -1,0 +1,127 @@
+.back{
+    width: 670;
+    height: 600;
+    background-color: #153448;
+    margin-top: 80px;
+    position: absolute;
+}
+
+.back h1{
+    color: #948979;
+    font-size: 95px;
+    margin-left: 35px;
+}
+
+.image1 img{
+    width: 550px;
+    height: 250px;
+    margin-top: 400px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.image2 img{
+    width: 450px;
+    height: 250px;
+    margin-top: 130px;
+    margin-left: 1050px;
+    position: absolute;
+}
+
+
+.image3 img{
+    width: 450px;
+    height: 250px;
+    margin-top: 130px;
+    margin-left: 550px;
+    position: absolute;
+}
+
+.p1{
+    width: 550px;
+    height: 250px;
+    position: absolute;
+    margin-top: 385px;
+    margin-left: 900px;
+}
+
+.p1 p{
+   opacity: 0.9; 
+   color: rgb(90, 86, 86);
+}
+
+.icon1{
+    background-color: #948979;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 890px;
+    /* border-radius: 40px; */
+}
+
+.icon1 p , .icon2 p{
+    margin-left: 15px;
+}
+
+.icon2{
+    background-color: #DFD0B8;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 1150px;
+    /* border-radius: 40px; */
+}
+
+.image1 ,.image2 , .image3{
+    position: relative;
+}
+
+.no1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 400px ;
+    margin-left: 300px;
+    background-color: beige;
+    text-align: center;
+}
+
+.no2{
+    background-color: beige;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 130px ;
+    margin-left: 1050px;
+    text-align: center;
+}
+
+.no3{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 130px ;
+    margin-left: 550px;
+    background-color: beige;
+    text-align: center;
+}
+
+
+.no1:hover , .no2:hover , .no3:hover{
+    background-color: #3C5B6F;
+    color: #DFD0B8;
+}
+
+.back:hover , .back:hover h1{
+    background-color:#3C5B6F;
+    color: #DFD0B8;
+
+}
+
+
+.icon1:hover , .icon2:hover{
+    background-color:#153448 ;
+    color: #DFD0B8;
+}
