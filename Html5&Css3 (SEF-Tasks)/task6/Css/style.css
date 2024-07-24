@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.header-parent {
+  width: 100vw;
+  margin: 35px 35px 25px 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.header-parent h1 {
+  font-family: "Playwrite CL", cursive;
+  font-size: 1.3em;
+}
+
+.header-parent h1 span {
+  color: indianred;
+  font-size: 1.4em;
+}
+
+.header-parent nav ul,
+.header-parent .icons {
+  width: 600px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: indianred;
+}
+
+nav ul li {
+  padding: 5px 15px;
+  font-weight: 550;
+  position: relative;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  border-left: 2px solid brown;
+  border-right: 2px solid brown;
+}
+
+nav ul li::before,
+nav ul li::after {
+  content: "";
+  background-color: brown;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+nav ul li::before {
+  bottom: 0;
+}
+
+nav ul li::after {
+  top: 0;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+
+}
+
+.header-parent .icons {
+  font-size: 1.4em;
+  width: 300px;
+  position: relative;
+
+}
+
+.header-parent .icons .last::after {
+  position: absolute;
+  content: "0";
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: indianred;
+  font-size: 0.4em;
+  bottom: 0px;
+  padding: 4px;
+  color: white;
+}
+
+/***********************************************************************************/
+/* Main */
+main {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-parent {
+  position: relative;
+  display: flex;
+}
+
+.main-text {
+  position: absolute;
+  align-self: center;
+  font-size: 3.7em;
+  line-height: 90px;
+  font-weight: bold;
+  left: 100px;
+  top: 150px;
+  color: brown;
+}
+
+.btn {
+  position: absolute;
+  padding: 7px;
+  color: brown;
+  background-color: white;
+}
+
+.image img {
+  height: 75vh;
+  width: 88vw;
+}
+
+/***********************************************************************************/
+/* Section */
+.title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.line {
+  top: 50px;
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  background-color: indianred;
+}
+
+.special-category-first {
+  height: 40vh;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.special-category-first img {
+  width: 275px;
+  height: 120%;
+  margin-bottom: 10px;
+}
+
+.item-faint {
+  color: gray;
+  font-size: 1.1em;
+}
+
+.item-info {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.special-category-items {
+  position: relative;
+}
+
+.special-category-items::after {
+  content: ">";
+  font-size: 2em;
+  position: absolute;
+  color: white;
+  width: 0px;
+  height: 0px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 245px;
+  top: 362px;
+}
+
+.special-category-items:hover::after {
+  width: 30px;
+  height: 30px;
+}
+
+/* First Is Done */
+.special-category-mid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.marketing {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: indianred;
+}
+
+.marketing .marketing-head {
+  display: flex;
+}
+
+.marketing .marketing-head h2 {
+  font-size: 2em;
+  margin: -10px 0px 20px 10px;
+}
+
+.marketing .marketing-head h2 span {
+  font-size: 0.8em;
+}
+
+.marketing p {
+  font-size: 1.2em;
+  line-height: 22px;
+}
+
+.marketing i {
+  font-size: 3em;
+}
+
+.mid {
+  margin: 0px 15px;
+}
+
+.discount {
+  padding: 10px;
+  background-image: url("../images/stock-photo-the-national-saudi-arabian-dish-chicken-kabsa-with-rice-mandi-2188453117.jpg");
+  background-size: cover;
+  width: 21.2%;
+  color: white;
+  font-size: 1.2em;
+}
+
+.discount p {
+  color: rgb(189, 187, 187);
+}
+
+.discount span {
+  color: white;
+  font-size: 1.4em;
+}
+
+.mid {
+  background-image: url("../images/stock-photo-stir-fry-noodles-with-vegetables-and-shrimps-in-black-bowl-slate-background-top-view-copy-space-1075259726.jpg");
+}
+
+.discount:hover {
+  transform: scale(1.05);
+}
+
+/* Second Is Done */
+.special-category-last{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.last-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 2px solid rgb(53, 51, 51);
+  padding-left: 50px;
+  font-size: 1.8em;
+  color: indianred;
+  margin-bottom: 20px;
+}
+
+.last-icons:first-child{
+  border-left: none;
+}
+
+.heavy-text{
+  font-size: 0.7em;
+  color: black;
+}
+
+.light-text{
+  font-size: 0.6em;
+  color: indianred;
+}
+
+.last-icons i{
+  margin-bottom: 5px;
+}
+
+.last-icons:hover.last-icons i{
+  transform: translateY(-35px); 
+  transition: 1s;
+}
